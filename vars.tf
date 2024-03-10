@@ -7,3 +7,9 @@ variable "engine_version" {}
 variable "subnet_ids" {}
 variable "tags" {}
 
+variable "no_of_instances" {}
+variable "instance_class" {}
+
+variable "storage_encrypted" {
+  default = true
+}
