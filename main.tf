@@ -75,7 +75,7 @@ resource "aws_ssm_parameter" "docdb_url_user" {
   name  = "${var.env}.docdb.url.user"
   type  = "String"
   value = "mongodb://${data.aws_ssm_parameter.user.value}:${data.aws_ssm_parameter.pass.value}@dev-docdb.cluster-c3mykk0g8115.us-east-1.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"
-}
+
 }
 
 
